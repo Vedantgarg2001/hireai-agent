@@ -2,7 +2,7 @@ services:
   - type: web
     name: hireai-backend
     runtime: python
-    rootDir: resume-agent/backend
+    rootDir: backend
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port 8000
     envVars:
