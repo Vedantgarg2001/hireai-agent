@@ -1,0 +1,6 @@
+# Local environment
+backend/.env
+
+# Python cache files
+**/__pycache__/
+*.py[cod]
