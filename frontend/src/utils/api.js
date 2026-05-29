@@ -4,7 +4,7 @@ import {
   DUMMY_INTERVIEW_QUESTIONS,
 } from "../data/dummyData";
 
-const API_BASE = "http://localhost:8001";
+const API_BASE = "https://hireai-agent.onrender.com";
 
 const delay = (ms) => new Promise((r) => setTimeout(r, ms));
 
