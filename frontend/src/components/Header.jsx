@@ -4,7 +4,7 @@ export default function Header({ memoryOpen, setMemoryOpen, logCount }) {
   const [mode, setMode] = useState("checking");
 
   useEffect(() => {
-    fetch("http://localhost:8001/health")
+    fetch("http://hireai-agent.onrender.com/health")
       .then((r) => r.json())
       .then((d) => setMode(d.mode === "live" ? "live" : "demo"))
       .catch(() => setMode("offline"));
